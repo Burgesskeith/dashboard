@@ -16,7 +16,8 @@ function App() {
   return (
     <div className="">
       <div className="">
-        <header className="flex items-center p-4 text-semibold text-gray-100 bg-slate-900">
+        <header className="flex items-center p-6 text-semibold text-gray-100 bg-slate-800">
+          <div className="pr-2 text-2xl">SPIDER</div>
           <button className="p-1 mr-4" onClick={handleClick}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +34,6 @@ function App() {
               />
             </svg>
           </button>
-          LOGO
         </header>
       </div>
 
@@ -43,10 +43,10 @@ function App() {
             sidebarOpen ? "w-60" : "w-20"
           }`}
         >
-          <div>
+          <div className="">
             {sidebarOpen ? (
               <nav className="flex-1 flex flex-col bg-slate-800 text-white pt-6 pl-4 h-screen">
-                <div className="flex">
+                <div className="flex ">
                   <div className="p-2">
                     <FaAffiliatetheme />
                   </div>
@@ -68,19 +68,22 @@ function App() {
             ) : (
               <nav className="flex-2 flex flex-col bg-slate-800 text-white pt-6 pl-4 h-screen">
                 <div className="flex">
-                  <div className="p-2 text-xl ">
+                  <div className="p-2">
                     <FaAffiliatetheme />
                   </div>
+                  <div className="p-2"></div>
                 </div>
                 <div className="flex">
-                  <div className="p-2 text-xl">
+                  <div className="p-2">
                     <FaAcquisitionsIncorporated />
                   </div>
+                  <div className="p-2"></div>
                 </div>
                 <div className="flex">
-                  <div className="p-2 text-xl">
+                  <div className="p-2">
                     <FaArtstation />
                   </div>
+                  <div className="p-2"></div>
                 </div>
               </nav>
             )}
