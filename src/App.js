@@ -22,7 +22,7 @@ function App() {
     <>
       <div className="">
         <div className="">
-          <header className="flex items-center p-6 text-semibold text-gray-100 bg-slate-800">
+          <header className="flex items-center p-6 text-semibold text-gray-100 bg-slate-800 ">
             <div className="pr-2 text-2xl">SPIDER</div>
             <button className="p-1 mr-4" onClick={handleClick}>
               <svg
